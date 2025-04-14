@@ -33,8 +33,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_logarithm(self):
         self.assertEqual(log(2,8),3)
-        self.assertEqual(log(1000,10), 3)
-        self.assertNotEqual(log(2), 1)
+        self.assertEqual(log(10,1000), 3)
+        self.assertNotEqual(log(2,0), 1)
 
     def test_log_invalid_base(self):
         with self.assertRaises(ValueError):
