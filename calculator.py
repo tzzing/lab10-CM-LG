@@ -17,7 +17,7 @@ def subtract(a, b):
 
 
 
-def logarithim(a,b):
+def logarithm(a,b):
     if b<0:
         raise ValueError
     return math.log(b,a)
