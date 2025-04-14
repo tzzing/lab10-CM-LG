@@ -4,7 +4,7 @@ calculator.py
 
 One function per operation, in order.
 """
-#https://github.com/tzzing/lab10-CM-LG
+# https://github.com/tzzing/lab10-CM-LG
 #Partner 1: Christina Maribbay
 #Partner 2: Lana Gerstenberger
 # First example
