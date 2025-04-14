@@ -9,6 +9,19 @@ import math
 def add(a, b):
     return a+b
 
+def multiply(a, b):
+    return a*b
+
+def logarithim(a,b):
+    if b<0:
+        raise ValueError
+    return math.log(b,a)
+def exponent(a,b):
+    return a**b
+import math
+def add(a, b):
+    return a+b
+
 def sub(a, b):
     return a-b
 
