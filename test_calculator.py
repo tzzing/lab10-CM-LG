@@ -1,6 +1,8 @@
 import unittest
 from calculator import *
-
+#https://github.com/tzzing/lab10-CM-LG
+#Partner 1: Christina Maribbay
+#Partner 2: Lana Gerstenberger
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self):
@@ -29,13 +31,13 @@ class TestCalculator(unittest.TestCase):
             div(5, 0)
 
     def test_logarithm(self):
-        self.assertEqual(log(1), 0)
+        self.assertEqual(log(1, 0), 0)
         self.assertEqual(log(1000,10), 3)
         self.assertNotEqual(log(2), 1)
 
     def test_log_invalid_base(self):
         with self.assertRaises(ValueError):
-            log(-5)
+            log(-5, 0)
 
     
     ######## Partner 1

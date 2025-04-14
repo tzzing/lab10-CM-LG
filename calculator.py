@@ -4,8 +4,19 @@ calculator.py
 
 One function per operation, in order.
 """
+#https://github.com/tzzing/lab10-CM-LG
+#Partner 1: Christina Maribbay
+#Partner 2: Lana Gerstenberger
 # First example
 import math
+def subtract(a, b):
+    return a-b
+def hypotenuse(a, b):
+    return math.hypot(a,b)
+def square_root(a):
+    if a<0:
+        raise ValueError
+    return math.sqrt(a)
 def add(a, b):
     return a+b
 
