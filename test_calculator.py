@@ -1,3 +1,7 @@
+# https://github.com/tzzing/lab10-CM-LG
+# Partner 1: Christina Maribbay
+# Partner 2: Lana Gerstenberger
+
 import unittest
 from calculator import *
 
@@ -26,16 +30,16 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 2
     def test_divide_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
-            div(5, 0)
+            div(0,5)
 
     def test_logarithm(self):
-        self.assertEqual(logarithm(1), 0)
-        self.assertEqual(logarithm(1000,10), 3)
-        self.assertNotEqual(logarithm(2), 1)
+        self.assertEqual(logarithm(2, 1), 0)
+        self.assertAlmostEqual(logarithm(1000,10), 0.3, places = 1)
+        self.assertNotEqual(logarithm(2, 4), 1)
 
     def test_log_invalid_base(self):
         with self.assertRaises(ValueError):
-            logarithm(-5)
+            logarithm(2,-5)
 
     
     ######## Partner 1
